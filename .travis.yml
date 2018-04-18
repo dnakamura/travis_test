@@ -1,0 +1,11 @@
+os:
+    - linux
+language: cpp
+sudo: flase
+dist: trusty
+
+before_script:
+    - echo "Before script"
+script:
+    - echo "script"
+
