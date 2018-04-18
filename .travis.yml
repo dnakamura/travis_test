@@ -6,6 +6,10 @@ dist: trusty
 
 before_script:
     - echo "Before script"
+    - export TEST_VAR="abc"
+    - echo "TEST_VAR= ${TEST_VAR}"
+    - false
+    - echo "before script: after false"
 script:
     - echo "script"
 
